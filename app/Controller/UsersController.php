@@ -6,35 +6,60 @@ App::uses('AppController', 'Controller');
  * @property User $User
  */
 class UsersController extends AppController {
-	/*beforeFilter*/
+
+
 	public function beforeFilter(){
 		parent::beforeFilter();
 		$this->Auth->allow('add');
 	}
 	
-	/**
-	 * login and logout
-	 *
-	 * @author gaspard
-	 **/
-	public function login(){
-
-		if ($this->request->is('post')){
-			if($this->Auth->login()){
-				$this->redirect($this->Auth->redirect());
-			}
-			else{
-				$this->Session->setFlash('Invalid password');
+	public function isAuthorized($user){
+		
+		if($this->action == 'delete'){
+			return false;
+		}
+		
+		if($this->action == 'edit'){
+			$id = $this->request->params['pass'][0];
+			
+			//users/edit/6, id is 6
+			if(isset($user['id']) && $user['id'] == $id){
+				return true;
+			}else{
+				return false;
 			}
 		}
-
+		
+		return parent ::isAuthorized($user);
 	}
-	public function logout(){
 
-		$this->redirect(
-				$this->Auth->logout()
-			);
+/**
+ * login and logout
+ *
+ * @author gaspard
+ **/
+public function login(){
+
+	if ($this->request->is('post')){
+		if($this->Auth->login()){
+			$this->redirect($this->Auth->redirect());
+		}
+		else{
+			$this->Session->setFlash('Invalid password');
+		}
 	}
+
+}
+public function logout(){
+
+	$this->redirect(
+			$this->Auth->logout()
+		);
+}
+
+
+
+
 
 /**
  * index method
