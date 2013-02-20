@@ -25,7 +25,11 @@
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
+<<<<<<< HEAD
 	Router::connect('/', array('controller' => 'quotes', 'action' => 'index'));
+=======
+	Router::connect('/', array('controller' => 'quotes', 'action' => 'view', 2));
+>>>>>>> changement dans le fichier routes.php
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */

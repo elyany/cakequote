@@ -1,0 +1,9 @@
+2013-02-20 15:42:42 Error: [MissingControllerException] Controller class QuoteController could not be found.
+Exception Attributes: array (
+  'class' => 'QuoteController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/quote
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
