@@ -7,3 +7,166 @@ Request URL: /cakequote/quote
 Stack Trace:
 #0 /Applications/MAMP/htdocs/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-02-20 16:34:10 Error: Fatal Error (4): syntax error, unexpected '(', expecting ')' in [/Applications/MAMP/htdocs/cakequote/app/Controller/AppController.php, line 36]
+2013-02-20 16:34:10 Error: [FatalErrorException] syntax error, unexpected '(', expecting ')'
+Request URL: /cakequote/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 36, Array)
+#2 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 36, Array)
+#3 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:34:14 Error: Fatal Error (4): syntax error, unexpected '(', expecting ')' in [/Applications/MAMP/htdocs/cakequote/app/Controller/AppController.php, line 36]
+2013-02-20 16:34:14 Error: [FatalErrorException] syntax error, unexpected '(', expecting ')'
+Request URL: /cakequote/quotes/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 36, Array)
+#2 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 36, Array)
+#3 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:37:55 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/cakequote/app/Controller/AppController.php, line 42]
+2013-02-20 16:37:55 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cakequote/quotes/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#2 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#3 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:37:55 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/cakequote/app/Controller/AppController.php, line 42]
+2013-02-20 16:37:55 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cakequote/quotes/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#2 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#3 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:38:05 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/cakequote/app/Controller/AppController.php, line 42]
+2013-02-20 16:38:05 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cakequote/quotes
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#2 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#3 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:38:07 Error: [MissingControllerException] Controller class QuoteController could not be found.
+Exception Attributes: array (
+  'class' => 'QuoteController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/quote
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 16:38:07 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/cakequote/app/Controller/AppController.php, line 42]
+2013-02-20 16:38:07 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cakequote/quote
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#2 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#3 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:38:08 Error: [MissingControllerException] Controller class QuoteController could not be found.
+Exception Attributes: array (
+  'class' => 'QuoteController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/quote
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 16:38:08 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/Applications/MAMP/htdocs/cakequote/app/Controller/AppController.php, line 42]
+2013-02-20 16:38:08 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cakequote/quote
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/Error/ErrorHandler.php(183): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#2 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#3 /Applications/MAMP/htdocs/cakequote/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-20 16:38:29 Error: [MissingControllerException] Controller class QuoteController could not be found.
+Exception Attributes: array (
+  'class' => 'QuoteController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/quote
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 16:40:16 Error: [MissingControllerException] Controller class QuoteController could not be found.
+Exception Attributes: array (
+  'class' => 'QuoteController',
+  'plugin' => NULL,
+)
+Request URL: /cakequote/quote
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-20 16:40:20 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:41:32 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:41:32 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-20 16:46:26 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakequote/app/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakequote/app/View/Users/login.ctp',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/View/View.php(467): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakequote/lib/Cake/Controller/Controller.php(947): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakequote/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Applications/MAMP/htdocs/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-20 16:46:26 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakequote/app/View/Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakequote/app/View/Users/login.ctp',
+)
+Request URL: /cakequote/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakequote/lib/Cake/View/View.php(467): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakequote/lib/Cake/Controller/Controller.php(947): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakequote/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Applications/MAMP/htdocs/cakequote/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakequote/app/webroot/index.php(97): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

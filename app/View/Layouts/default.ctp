@@ -40,8 +40,20 @@
 			<h1><?php echo $this->Html->link('cakequote', '/'); ?></h1>
 		</div>
 		<div id="content">
+<<<<<<< HEAD
 			<?php debug($me); ?>
 
+=======
+			<h2>
+				<?php echo $me['username']; ?>
+				<?php if ($me['id']>0): ?> 
+					<div><?php echo $this->html->link('logout','/users/logout') ?></div>
+				<?php else: ?>
+					<div><?php echo $this->html->link('login','/users/login') ?></div>
+				<?php endif; ?>
+			</h2>
+			
+>>>>>>> login and logout
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>

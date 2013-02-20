@@ -7,11 +7,15 @@ App::uses('AppController', 'Controller');
  */
 class UsersController extends AppController {
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> login and logout
 	public function beforeFilter(){
 		parent::beforeFilter();
 		$this->Auth->allow('add');
 	}
+<<<<<<< HEAD
 	
 	public function isAuthorized($user){
 		
@@ -61,6 +65,19 @@ public function logout(){
 
 
 
+=======
+
+	public function login() {
+	    if ($this->request->is('post')) {
+	        if ($this->Auth->login()) {
+	            $this->redirect($this->Auth->redirect());
+	        } else {
+	            $this->Session->setFlash(__('Invalid username or password, try again'));
+	        }
+	    }
+	}
+
+>>>>>>> login and logout
 /**
  * index method
  *
