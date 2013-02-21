@@ -51,6 +51,8 @@
 				<?php else: ?>
 					<div><?php echo $this->html->link('login','/users/login') ?></div>
 				<?php endif; ?>
+				<div><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?></div>
+				
 			</h2>
 			
 >>>>>>> login and logout

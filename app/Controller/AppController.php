@@ -109,9 +109,10 @@ class AppController extends Controller {
 		'Session',
 		'Auth' => array(
 			'loginRedirect' => array('controller' => 'quotes', 'action'=>'index'),
-			'loginRedirect' => array('controller' => 'quotes', 'action'=>'index')
-			)
-		);
+			'loginRedirect' => array('controller' => 'quotes', 'action'=>'index'),
+			'authorize' => array('Controller')
+		)
+	);
 
 	function beforeFilter() {
 		if (isset($this->params['prefix']) && $this->params['prefix'] == 'admin') {
@@ -125,5 +126,21 @@ class AppController extends Controller {
 			$this->set('me',array('username'=>'visitor','id'=>0));
 		}
 	}
+
+	/**
+	* isAuthorized
+	*/
+	public function isAuthorized($user)
+	{
+		if ($user['group_id'] && $user['group_id']==1) {
+			return true;	
+		}
+
+		return false;	
+	}
 }
+<<<<<<< HEAD
 >>>>>>> login and logout
+=======
+
+>>>>>>> Ajout du bouton inscription page accueil

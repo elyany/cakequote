@@ -26,10 +26,14 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	Router::connect('/', array('controller' => 'quotes', 'action' => 'index'));
 =======
 	Router::connect('/', array('controller' => 'quotes', 'action' => 'view', 2));
 >>>>>>> changement dans le fichier routes.php
+=======
+	Router::connect('/', array('controller' => 'quotes', 'action' => 'index'));
+>>>>>>> Ajout du bouton inscription page accueil
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
