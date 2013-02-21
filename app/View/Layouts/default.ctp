@@ -21,6 +21,10 @@
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
+	<link href='http://fonts.googleapis.com/css?family=Rufina' rel='stylesheet' type='text/css'>
+	
+	<link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+	
 	<title>
 		<?php echo $title_for_layout; ?>
 	</title>
@@ -38,8 +42,21 @@
 	<div id="container">
 		<div id="header">
 			<h1><?php echo $this->Html->link('cakequote', '/'); ?></h1>
+			<?php if ($me['id']>0): ?> 
+				<div class="login">
+					<?php echo $this->html->link('Logout','/users/logout') ?>
+				</div>
+			<?php else: ?>
+				<div class="logout">
+					<?php echo $this->html->link('Login','/users/login') ?>
+				</div>
+			<?php endif; ?>
+				<div class="new-user">
+			<?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?>
+				</div>
 		</div>
 		<div id="content">
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<?php debug($me); ?>
 
@@ -54,6 +71,8 @@
 				<div><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?></div>
 				
 			</h2>
+=======
+>>>>>>> Modification css
 			
 >>>>>>> login and logout
 			<?php echo $this->Session->flash(); ?>
