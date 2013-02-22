@@ -67,10 +67,10 @@ class QuotesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Quote->create();
 			
-			$this->request->data['Quote']['user_id']=1000;
-			debug($this->Auth->user('id'));
+			$this->request->data['Quote']['user_id']=$this->Auth->user('id');
+			/*debug($this->Auth->user('id'));
 			debug($this->request->data);
-			die();
+			die();*/
 			
 			if ($this->Quote->save($this->request->data)) {
 				$this->Session->setFlash(__('The quote has been saved'));
