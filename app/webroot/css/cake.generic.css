@@ -23,7 +23,7 @@
 
 /** General Style Info **/
 body {
-	background: #003d4c;
+	background: pink;
 	color: #fff;
 	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
 	font-size:90%;
@@ -44,22 +44,27 @@ a img {
 h1, h2, h3, h4 {
 	font-weight: normal;
 	margin-bottom:0.5em;
+	font-family: 'Petit Formal Script', cursive;
+
 }
 h1 {
 	background:#fff;
 	color: #003d4c;
-	font-size: 100%;
+	font-size: 3em;
+
 }
 h2 {
 	background:#fff;
 	color: #e32;
-	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 190%;
+	font-family: 'Rufina', serif;
+
 }
 h3 {
 	color: #2c6877;
-	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 165%;
+	font-family: 'Rufina', serif;
+
 }
 h4 {
 	color: #993;
@@ -82,24 +87,64 @@ p {
 }
 #header h1 {
 	line-height:20px;
-	background: #003d4c url('../img/cake.icon.png') no-repeat left;
+	background:  url('../img/cake.icon.png') no-repeat left;
 	color: #fff;
 	padding: 0px 30px;
 }
 #header h1 a {
 	color: #fff;
-	background: #003d4c;
 	font-weight: normal;
 	text-decoration: none;
 }
 #header h1 a:hover {
 	color: #fff;
-	background: #003d4c;
 	text-decoration: underline;
 }
 #header.admin,#header.admin h1, #header.admin h1 a{
 	background-color:#a00;
 }
+
+#header .login a{
+	font-family: 'Petit Formal Script', cursive;
+	font-size:2em;
+	float:right;
+	color:#FFF;
+	text-decoration:none;
+}
+
+#header .login a:hover{
+	color:red;
+}
+
+
+
+#header .logout a{
+	font-family: 'Petit Formal Script', cursive;
+	font-size:2em;
+	float:right;
+	color:#FFF;
+	text-decoration:none;
+
+}
+
+#header .logout a:hover{
+	color:red;
+}
+
+#header .new-user a{
+	font-family: 'Petit Formal Script', cursive;
+	font-size:2em;
+	float:right;
+	color:#FFF;
+	text-decoration:none;
+	margin-right: 2em;
+	margin-bottom: 1em;
+}
+
+#header .new-user a:hover{
+	color:red;
+} 
+
 #content{
 	background: #fff;
 	clear: both;
@@ -113,6 +158,11 @@ p {
 	text-align: right;
 }
 
+#content h2{
+	margin-top:1em;
+}
+
+
 /** containers **/
 div.form,
 div.index,
@@ -124,7 +174,7 @@ div.view {
 }
 div.actions {
 	float:left;
-	width:16%;
+	width:8%;
 	padding:10px 1.5%;
 }
 div.actions h3 {
@@ -132,48 +182,35 @@ div.actions h3 {
 	color:#777;
 }
 
+#UserLoginForm {
+	font-family: 'Rufina', serif;
 
-/** Tables **/
-table {
-	border-right:0;
-	clear: both;
-	color: #333;
-	margin-bottom: 10px;
-	width: 100%;
 }
-th {
-	border:0;
-	border-bottom:2px solid #555;
-	text-align: left;
-	padding:4px;
+
+#UserAddForm {
+	font-family: 'Rufina', serif;
+
 }
-th a {
-	display: block;
-	padding: 2px 4px;
-	text-decoration: none;
+/** quotes **/
+.title{
+	font-family: 'Rufina', serif;
+
 }
-th a.asc:after {
-	content: ' ⇣';
+
+.quote{
+	font-family: 'Rufina', serif;
+	font-size:2em;
+
 }
-th a.desc:after {
-	content: ' ⇡';
+
+.surname{
+	font-family: 'Rufina', serif;
+
 }
-table tr td {
-	padding: 6px;
-	text-align: left;
-	vertical-align: top;
-	border-bottom:1px solid #ddd;
-}
-table tr:nth-child(even) {
-	background: #f9f9f9;
-}
-td.actions {
-	text-align: center;
-	white-space: nowrap;
-}
-table td.actions a {
-	margin: 0px 6px;
-	padding:2px 5px;
+
+.actions-quotes{
+	font-family: 'Rufina', serif;
+
 }
 
 /* SQL log */
@@ -317,7 +354,7 @@ input, textarea {
 	font-size: 140%;
 	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
 	padding: 1%;
-	width:98%;
+	width:40%;
 }
 select {
 	clear: both;
@@ -357,17 +394,46 @@ input[type=submit] {
 	width: auto;
 }
 form .submit input[type=submit] {
-	background:#62af56;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
-	background-image: -webkit-linear-gradient(top, #76BF6B, #3B8230);
-	background-image: -moz-linear-gradient(top, #76BF6B, #3B8230);
-	border-color: #2d6324;
-	color: #fff;
-	text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;
-	padding: 8px 10px;
+	font-family: 'Rufina', serif;
+		font-size: 14px;
+		color: #f0f0f0;
+		padding: 10px 20px;
+		background: -moz-linear-gradient(
+			top,
+			#d9d9d9 0%,
+			#5d5e5e);
+		background: -webkit-gradient(
+			linear, left top, left bottom, 
+			from(#d9d9d9),
+			to(#5d5e5e));
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 6px;
+		border: 1px solid #ffffff;
+		-moz-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 0px 1px rgba(255,255,255,1);
+		-webkit-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 0px 1px rgba(255,255,255,1);
+		box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 0px 1px rgba(255,255,255,1);
+		text-shadow:
+			0px -1px 0px rgba(000,000,000,0.7),
+			0px 1px 0px rgba(255,255,255,0.3);
+
 }
 form .submit input[type=submit]:hover {
-	background: #5BA150;
+	background: -moz-linear-gradient(
+			top,
+			#fcfcfc 0%,
+			#a0a2a3);
+		background: -webkit-gradient(
+			linear, left top, left bottom, 
+			from(#fcfcfc),
+			to(#a0a2a3));
+		color:#000;
 }
 /* Form errors */
 form .error {

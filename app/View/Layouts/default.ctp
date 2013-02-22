@@ -21,6 +21,10 @@
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
+	<link href='http://fonts.googleapis.com/css?family=Rufina' rel='stylesheet' type='text/css'>
+	
+	<link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+	
 	<title>
 		<?php echo $title_for_layout; ?>
 	</title>
@@ -38,33 +42,21 @@
 	<div id="container">
 		<div id="header">
 			<h1><?php echo $this->Html->link('cakequote', '/'); ?></h1>
+			<?php if ($me['id']>0): ?> 
+				<div class="login">
+					<?php echo $this->html->link('Logout','/users/logout') ?>
+				</div>
+			<?php else: ?>
+				<div class="logout">
+					<?php echo $this->html->link('Login','/users/login') ?>
+				</div>
+			<?php endif; ?>
+				<div class="new-user">
+			<?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?>
+				</div>
 		</div>
 		<div id="content">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<?php debug($me); ?>
 
-=======
-=======
->>>>>>> add buttons login/logout/new-user
-			<h2>
-				<?php echo $me['username']; ?>
-				<?php if ($me['id']>0): ?> 
-					<div><?php echo $this->html->link('logout','/users/logout') ?></div>
-				<?php else: ?>
-					<div><?php echo $this->html->link('login','/users/login') ?></div>
-				<?php endif; ?>
-				<div><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?></div>
-				
-			</h2>
-<<<<<<< HEAD
-=======
->>>>>>> Modification css
-=======
->>>>>>> add buttons login/logout/new-user
-			
->>>>>>> login and logout
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
@@ -73,6 +65,6 @@
 			coded with love
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>
